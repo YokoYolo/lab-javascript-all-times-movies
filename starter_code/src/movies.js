@@ -4,6 +4,18 @@
 
 // Get the average of all rates with 2 decimals 
 
+function ratesAverage (){
+    var sum = movies.reduce(function (sum, placeholder) {
+      return Number(sum) + Number (placeholder.rate);
+      }, 0 );
+     var avgratesAverage = Math.round(sum/ movies.length * 100) / 100;
+    
+    return avgratesAverage
+    }
+    
+    ratesAverage ()
+    
+
 
 // Get the average of Drama Movies
 
